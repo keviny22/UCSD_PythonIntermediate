@@ -32,7 +32,7 @@ class Student(object):
         :return: GPA or 0 if no courses
         """
         number_of_courses = len(self.courses)
-        if number_of_courses is 0:
+        if number_of_courses == 0:
             return 0
 
         total_score = functools.reduce(lambda x, y: x + y, self.courses.values(), 0)
